@@ -1,1 +1,165 @@
 /*Header*/ 
+.header{
+	.social{
+		margin-left: -7px;
+	}
+}
+.header__top{
+	padding: 1em 0;
+}
+.logo{
+	font-family: var(--pacifico);
+	color: var(--blue);
+	font-size: 2.133em;
+}
+.social{
+	li{
+		padding: 0 7px;
+		a{
+			img{
+				transition: all .1s;
+			}
+			&:hover{
+				img{
+					filter: drop-shadow(2px 2px 0 rgba(#316ab0, .5))
+				}
+			}
+		}
+	}
+}
+.header__contact{
+	text-align: right;
+	a{
+		display: block;
+	}
+	.phone{
+		margin-bottom: .4em;
+	}
+}
+.phone{
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+.email-link{
+	color: var(--blue);
+	font-size: .8rem;
+	&:hover{
+		color: var(--grey-text);
+	}
+}
+.header__nav{
+	background-color: var(--grey);
+	.header__contact{
+		display: none;
+	}
+	.btn{
+		background-color: var(--blue);
+		color: #fff;
+		display: flex;
+		align-items: center;
+		padding: 10px 30px;
+		font-weight: 500;
+		border: 2px solid var(--blue);
+		&:hover{
+			background-color: #fff;
+			color: var(--blue);
+		}
+	}
+}
+.menu{
+	& > li{
+		position: relative;
+		padding: 1.33em 0;
+		font-weight: 500;
+		&:not(:last-child){
+			margin-right: 2.333em;
+		}
+		a{
+			&:hover,
+			&.active{
+				color: var(--blue);
+			}
+		}
+	}
+}
+.submenu-link {
+	& > a{
+		display: flex;
+		align-items: center;
+		&::after{
+			content: '';
+			flex: none;
+			width: 6px;
+			height: 4px;
+			background:transparent url('../img/icons/arrow_down.png') left top no-repeat;
+			background-size: contain;
+			margin-left: 10px;
+		}
+	}
+	
+}
+@media(min-width: 1200px){
+	.submenu-link:hover{
+		&>a{
+			color: var(--blue);
+			&::after{
+				transform: rotate(180deg);
+			}
+		}
+		.submenu{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
+.submenu{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 180px;
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(#c2c2be, .3);
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .3s;
+	z-index: 5;
+	li{
+		a{
+			display: block;
+			font-size: .9em;
+			padding: 7px 10px;
+			border-top: 1px solid #fff;
+			&:hover,
+			&.active{
+				background-color: var(--grey);
+				color: #fff;
+			}
+		}
+	}
+}
+
+.mob-btn{
+	width: 35px;
+	display: none;
+	&.active{
+		span{
+			background-color: var(--grey);
+		}
+	}
+	span{
+		display: block;
+		height: 5px;
+		background-color: var(--blue);
+		&:not(:last-child){
+			margin-bottom: 4px;
+		}
+	}
+}
+
+
+
+
+
+
+
+

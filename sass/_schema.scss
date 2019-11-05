@@ -1,0 +1,139 @@
+/*schema*/ 
+.schema{
+	padding-bottom: 60px;
+}
+.schema__list{
+	max-width: 820px;
+	margin: 0 auto;
+	justify-content: space-between;
+	counter-reset: number;
+	position: relative;
+	&::before{
+		content: '';
+		width: 80%;
+		height: 1px;
+		background-color: #9f9f9a;
+		position: absolute;
+		top: 16px;
+		left: 10%;
+	}
+	li{
+		width: 20%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: relative;
+		z-index: 1;
+		&:not(.last)::before{
+			content: counter(number);
+			counter-increment: number;
+			flex: none;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			border: 1px solid #9f9f9a;
+			background-color: #fff;
+			color: #316ab0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 18px;
+		}
+		&.last{
+			&::before{
+				content: '';
+				width: 30px;
+				height: 35px;
+				background:transparent url('../img/icons/flag.png') left top no-repeat;
+				background-size: contain;
+				transform: translate(3px, -18px);
+			}
+		}
+	}
+	li{
+		&.active{
+			.schema__title{
+				font-weight: 700;
+			}
+			&::before{
+				background-color:  #316ab0;
+				color: #fff;
+				border-color: #316ab0;
+			}
+		}
+	}
+}
+
+.schema__title{
+	font-size: 13px;
+	text-transform: uppercase;
+	color: #82827e;
+	line-height: 1.3;
+	height: 27px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+
+
+.works-schema{
+	padding: 50px 0;
+	background:transparent url('../img/bg/bg-3.jpg') left top no-repeat;
+	background-size: cover;
+	.title{
+		color: #8e8e8a;
+		margin-bottom: 60px;
+	}
+}
+.works-schema__list{
+	margin: 0 -25px;
+	li{
+		width: 14.2857%;
+		padding: 0 25px;
+		position: relative;
+		text-align: center;
+		&:not(:last-child){
+			&::after{
+				content: '';
+				width: 25px;
+				height: 25px;
+				background:transparent url('../img/icons/arrow_right_grey.png') left top no-repeat;
+				background-size: contain;
+				position: absolute;
+				right: 0;
+				top: 10px;
+				transform: translateX(50%);
+			}
+		}
+	}
+	.ico{
+		height: 56px;
+		margin-bottom: 50px;
+		img{
+			max-height: 100%;
+		}
+	}
+	.text{
+		line-height: 1.3;
+		color: #7c7c78;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

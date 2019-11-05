@@ -1,0 +1,28 @@
+/*actory*/ 
+.factory{
+
+}
+.factory__text,
+.factory__video{
+	width: 48%;
+}
+.factory__video{
+	img, video, iframe{
+		width: 100% !important;
+	}
+}
+.factory__text{
+	color: #7f7f7b;
+	p{
+		line-height: 1.4;
+		&:not(:last-child){
+			margin-bottom: 30px;
+		}
+	}
+}
+.factory__text__title{
+	font-family: var(--caveat);
+	font-size: 30px;
+	margin-bottom: 1em;
+	line-height: 1.3;
+}

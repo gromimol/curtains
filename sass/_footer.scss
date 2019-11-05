@@ -2,3 +2,26 @@
 .footer{
 	
 }
+.footer__nav{
+	padding: 35px 0px;
+	background-color: #c2c2be;
+	.header__contact{
+		a{
+			color: #fff;
+			&:hover{
+				color: var(--blue);
+			}
+		}
+	}
+	.menu > li{
+		padding: 0;
+	}
+}
+.copyright{
+	text-align: center;
+	padding: 20px 0;
+	font-size: 12px;
+	background-color: #9f9f9a;
+	color: rgba(#fff, .7);
+	letter-spacing: 0.6px;
+}

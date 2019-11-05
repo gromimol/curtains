@@ -1,36 +1,527 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+	<title> Шторы</title>
 </head>
 <body>
 	<div class="wrapper">
 		<header class="header">
+			<div class="header__top">
+				<div class="container flex flex--center flex--between">
+					<ul class="social flex flex--center">
+						<li><a href="#"><img src="img/icons/instagram.png" alt=""></a></li>
+						<li><a href="#"><img src="img/icons/fb.png" alt=""></a></li>
+					</ul>
+
+					<a href="#" class="logo">
+						Шторы Валентина
+					</a>
+
+					<div class="header__contact">
+						<a href="tel:+74956567788" class="phone">+7 (495) 656 77 88</a>
+						<a href="mailto:info@valentina.ru" class="email-link">info@valentina.ru</a>
+					</div>
+
+					<div class="mob-btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__nav">
+				<!-- Для Главной страницы для container нужен класс justify-center  -->
+				<div class="container flex justify-center">
+					<nav class="nav">
+						<ul class="menu flex">
+							<li><a href="#" class="active">Главная</a></li>
+							<li><a href="#">Портфолио</a></li>
+							<li class="submenu-link">
+								<a href="#">Виды штор</a>
+								<ul class="submenu">
+									<li><a href="#">Прямые </a></li>
+									<li><a href="#">На люверсах </a></li>
+									<li><a href="#"> С ламбрекеном</a></li>
+									<li><a href="#">Римские</a></li>
+									<li><a href="#">Французские/ Австрийские</a></li>
+									<li><a href="#">Английские</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Ткани</a></li>
+							<li><a href="#">Карнизы</a></li>
+							<li><a href="#">Цех</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+
+						<div class="header__contact">
+							<a href="tel:+74956567788" class="phone">+7 (495) 656 77 88</a>
+							<a href="mailto:info@valentina.ru" class="email-link">info@valentina.ru</a>
+						</div>
+					</nav>
+				</div>
+			</div>
 			
 		</header>
 		<main class="main">
+
+			<div class="slider-container">
+				<div class="main-slider">
+					<div class="main-slider__item">
+						<img src="img/slides/slide.jpg" alt="">
+						<a href="#" class="btn">Вызов  дизайнера</a>
+					</div>
+					<div class="main-slider__item">
+						<img src="img/slides/slide.jpg" alt="">
+						<a href="#" class="btn">Вызов  дизайнера</a>
+					</div>
+					<div class="main-slider__item">
+						<img src="img/slides/slide.jpg" alt="">
+						<a href="#" class="btn">Вызов  дизайнера</a>
+					</div>
+					<div class="main-slider__item">
+						<img src="img/slides/slide.jpg" alt="">
+						<a href="#" class="btn">Вызов  дизайнера</a>
+					</div>
+					<div class="main-slider__item">
+						<img src="img/slides/slide.jpg" alt="">
+						<a href="#" class="btn">Вызов  дизайнера</a>
+					</div>
+					<div class="main-slider__item">
+						<img src="img/slides/slide.jpg" alt="">
+						<a href="#" class="btn">Вызов  дизайнера</a>
+					</div>
+				</div>
+
+				<div class="slider-preview">
+					<div class="slider-preview__item">
+						<img src="img/slides/slide-preview-3.jpg" alt="">
+					</div>
+					<div class="slider-preview__item">
+						<img src="img/slides/slide-preview-2.jpg" alt="">
+					</div>
+					<div class="slider-preview__item">
+						<img src="img/slides/slide-preview-3.jpg" alt="">
+					</div>
+					<div class="slider-preview__item">
+						<img src="img/slides/slide-preview-3.jpg" alt="">
+					</div>
+					<div class="slider-preview__item">
+						<img src="img/slides/slide-preview-2.jpg" alt="">
+					</div>
+					<div class="slider-preview__item">
+						<img src="img/slides/slide-preview-3.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<!-- /.slider-container -->
+
+			<div class="features">
+				<div class="title text-center white">
+					Почему мы?
+				</div>
+
+				<ul class="features__list flex flex--wrap">
+					<li>
+						<div class="feature__item">
+							<div class="ico">
+								<img src="img/icons/features/feature-1.png" alt="">
+							</div>
+							<div class="text">
+								Гибкие цены
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="feature__item">
+							<div class="ico">
+								<img src="img/icons/features/feature-2.png" alt="">
+							</div>
+							<div class="text">
+								Собственный цех
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="feature__item">
+							<div class="ico">
+								<img src="img/icons/features/feature-3.png" alt="">
+							</div>
+							<div class="text">
+								сотрудничаем с<br> другими дизайнерами <br>
+								и архитекторами
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="feature__item">
+							<div class="ico">
+								<img src="img/icons/features/feature-4.png" alt="">
+							</div>
+							<div class="text">
+								13-й летний опыт
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="feature__item">
+							<div class="ico">
+								<img src="img/icons/features/feature-5.png" alt="">
+							</div>
+							<div class="text">
+								Широкий выбор тканей
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="feature__item">
+							<div class="ico">
+								<img src="img/icons/features/feature-6.png" alt="">
+							</div>
+							<div class="text">
+								Пошив любого<br> домашнего текстиля
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<div class="description-block">
+				<div class="description__top">
+					<div class="description__title">
+						<div class="title">
+							Декоративные карнизы
+						</div>
+					</div>
+				</div>
+				<div class="description__content flex">
+					<div class="image">
+						<img src="img/photo-1.jpg" alt="">
+					</div>
+					<div class="text">
+						<p>
+							Индивидуальный подбор и пошив штор на заказ позволяют создавать уникальные проекты, которые идеально дополняют форму окна, дизайн комнаты, соответствуют высоте потолка, другим параметрам. Мы предлагаем клиентам только актуальные решения в различных стилистиках.
+						</p>
+						<p>
+							Дополнительные детали в дизайне штор (люверсы, подхваты, декоративные крючки, кольца, элементы для карнизов) позволяют создать интересные акценты, драпировки, придать композиции законченный внешний вид.
+						</p>
+						<p>
+							Каждый наш проект – результат кропотливой работы наших дизайнеров и мастеров по обработке текстиля. Предлагаемые шторы на заказ отличаются высочайшим качеством, основанным на большом опыте в выборе тканей, пошиве изделий. На всю продукцию предоставляется гарантия. Доступна бесплатная услуга навески штор и монтаж карнизов в Москве.
+						</p>
+						<p>
+							Мы напрямую сотрудничаем с производителями текстиля - такой подход позволяет предлагать клиентам качественные изделия по приятной стоимости без дополнительных наценок. В нашей дизайн-студии можно заказать шторы, которые будут в точности соответствовать вашему бюджету, характеру комнаты, функциональности, пожеланиям по стилистике (легкие и невесомые занавески или плотные и тяжелые портьеры).
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="steps">
+				<div class="steps-container flex flex--center">
+					<div class="steps__left">
+						<div class="steps__title">
+							<div class="ico">
+								<img src="img/icons/decor-1.png" alt="">
+							</div>
+							<div class="text">
+								Шторы
+								<span>«под ключ»</span>
+							</div>
+						</div>
+					</div>
+					<div class="steps__right">
+						<ul class="steps__list">
+							<li>
+								<div class="step__item">
+									<div class="step__item__title">
+										Замер
+									</div>
+									<div class="text">
+										Индивидуальный подбор и пошив штор на заказ позволяют создавать уникальные проекты, которые идеально дополняют форму окна, дизайн комнаты, соответствуют высоте потолка, другим параметрам. Мы предлагаем клиентам только актуальные решения в различных стилистиках.
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="step__item">
+									<div class="step__item__title">
+										Оформление заказа
+									</div>
+									<div class="text">
+										Дополнительные детали в дизайне штор (люверсы, подхваты, декоративные крючки, кольца, элементы для карнизов) позволяют создать интересные акценты, драпировки, придать композиции законченный внешний вид.
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="step__item">
+									<div class="step__item__title">
+										Пошив
+									</div>
+									<div class="text">
+										Каждый наш проект – результат кропотливой работы наших дизайнеров и мастеров по обработке текстиля. Предлагаемые шторы на заказ отличаются высочайшим качеством, основанным на большом опыте в выборе тканей, пошиве изделий. На всю продукцию предоставляется гарантия. Доступна бесплатная услуга навески штор и монтаж карнизов в Москве.
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="step__item">
+									<div class="step__item__title">
+										Монтаж
+									</div>
+									<div class="text">
+										Мы напрямую сотрудничаем с производителями текстиля - такой подход позволяет предлагать клиентам качественные изделия по приятной стоимости без дополнительных наценок. 
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="types">
+				<div class="container">
+					<div class="title text-center">
+						Виды штор
+					</div>
+
+					<ul class="types__list flex flex--wrap">
+						<li>
+							<a href="#" class="type__item">
+								<div class="img">
+									<img src="img/types/type-1.jpg" alt="">
+								</div>
+								<div class="name">
+									Прямые 
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="type__item">
+								<div class="img">
+									<img src="img/types/type-2.jpg" alt="">
+								</div>
+								<div class="name">
+									На люверсах  
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="type__item">
+								<div class="img">
+									<img src="img/types/type-3.jpg" alt="">
+								</div>
+								<div class="name">
+									 С ламбрекеном 
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="type__item">
+								<div class="img">
+									<img src="img/types/type-4.jpg" alt="">
+								</div>
+								<div class="name">
+									Римские 
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="type__item">
+								<div class="img">
+									<img src="img/types/type-5.jpg" alt="">
+								</div>
+								<div class="name">
+									Французские/ Австрийские 
+								</div>
+							</a>
+						</li>
+						<li>
+							<a href="#" class="type__item">
+								<div class="img">
+									<img src="img/types/type-6.jpg" alt="">
+								</div>
+								<div class="name">
+									Английские
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="schema">
+				<div class="container">
+					<div class="title title--lt text-center">
+						Схема расчета стоимости
+					</div>
+
+					<ul class="schema__list flex">
+						<li class="active">
+							<div class="schema__title">
+								Выберите <br>
+								тип штор
+							</div>
+						</li>
+						<li>
+							<div class="schema__title">
+								Комплектация
+							</div>
+						</li>
+						<li>
+							<div class="schema__title">
+								Карниз
+							</div>
+						</li>
+						<li>
+							<div class="schema__title">
+								Длина<br> 
+								карниза
+							</div>
+						</li>
+						<li class="last">
+							<div class="schema__title">
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="works-schema">
+				<div class="container">
+					<div class="title text-center">
+						Схема работы
+					</div>
+
+					<ul class="works-schema__list flex flex--wrap">
+						<li>
+							<div class="works-schema__item">
+								<div class="ico">
+									<img src="img/icons/schema/schema-1.png" alt="">
+								</div>
+								<div class="text">
+									Выезд дизайнера
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="works-schema__item">
+								<div class="ico">
+									<img src="img/icons/schema/schema-2.png" alt="">
+								</div>
+								<div class="text">
+									Замер окна,<br> уточнение<br>  пожеланий
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="works-schema__item">
+								<div class="ico">
+									<img src="img/icons/schema/schema-3.png" alt="">
+								</div>
+								<div class="text">
+									Договор, оплата
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="works-schema__item">
+								<div class="ico">
+									<img src="img/icons/schema/schema-4.png" alt="">
+								</div>
+								<div class="text">
+									Разработка эксклюзивного дизайна
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="works-schema__item">
+								<div class="ico">
+									<img src="img/icons/schema/schema-5.png" alt="">
+								</div>
+								<div class="text">
+									Передача дизайна в производство
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="works-schema__item">
+								<div class="ico">
+									<img src="img/icons/schema/schema-6.png" alt="">
+								</div>
+								<div class="text">
+									Уточнение деталей
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="works-schema__item">
+								<div class="ico">
+									<img src="img/icons/schema/schema-7.png" alt="">
+								</div>
+								<div class="text">
+									Монтаж штор
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="about-block">
+				<div class="about-block__content">
+					<p>
+						Дизайнер – творец и генеральный художник вашего интерьера. <br>
+						Домашний текстиль со шторами покрывалами являются наиболее его творческой составляющей. <br>
+						Создание уюта, неповторимой игры красок, цветовых сочетаний является нашей главной задачей.
+					</p>
+					<p>
+						Данная картина не закончена и вам уже хочется дополнить ее, добавить свои мысли и пожелания. <br>
+						Наши дизайнеры помогут вам, добавят свой опыт и подскажет как сделать интерьер неповторимым. <br>
+						Так же будет произведена оптимизация по материалам, что бы сделать цены доступными.
+					</p>
+				</div>
+			</div>
 			
 		</main>
 		<footer class="footer">
-			<div class="svg-sprite">
-				<!-- svg-sprite -->
-				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-					<symbol viewBox="0 0 19 16" id="svg-tw"><g><g><path d="M18.47596,0.29553c-0.75361,0.46257 -1.58836,0.79914 -2.47671,0.98041c-0.71079,-0.78643 -1.72297,-1.27608 -2.84452,-1.27608c-2.1531,0 -3.89843,1.80994 -3.89843,4.0399c0,0.31612 0.03505,0.6245 0.10119,0.92017c-3.23919,-0.16856 -6.11139,-1.77678 -8.03401,-4.22173c-0.33562,0.59576 -0.52695,1.2899 -0.52695,2.031c0,1.40153 0.6887,2.63892 1.7336,3.3618c-0.63892,-0.02155 -1.23952,-0.20393 -1.76538,-0.50678v0.05029c0,1.9575 1.34371,3.59004 3.126,3.96253c-0.32648,0.09119 -0.67069,0.14203 -1.02677,0.14203c-0.25161,0 -0.49518,-0.02653 -0.73397,-0.0735c0.49641,1.60436 1.93517,2.77267 3.64041,2.80638c-1.33362,1.0832 -3.01485,1.7287 -4.84051,1.7287c-0.31475,0 -0.62501,-0.0199 -0.93008,-0.05527c1.72556,1.1451 3.7731,1.81436 5.97529,1.81436c7.16926,0 11.08978,-6.15657 11.08978,-11.49521l-0.01268,-0.52336c0.76398,-0.56702 1.42608,-1.27884 1.94785,-2.08738c-0.6992,0.31999 -1.4494,0.53829 -2.23806,0.63611c0.80489,-0.50015 1.42171,-1.29321 1.71397,-2.23438z" fill="currentColor" fill-opacity="1"></path></g></g></symbol>
+			<div class="footer__nav">
+				<div class="container flex flex--center flex--between">
+					<ul class="social flex flex--center">
+						<li><a href="#"><img src="img/icons/instagram_white.png" alt=""></a></li>
+						<li><a href="#"><img src="img/icons/fb_white.png" alt=""></a></li>
+					</ul>
 
-					<symbol viewBox="0 0 9 16" id="svg-fb"><g><g><path d="M8.24984,0.0001h-1.53954c-2.22306,0 -3.71037,1.60767 -3.71037,3.99956v1.60049v0h-2.24992c-0.73684,0 -0.74993,-0.00995 -0.74993,0.79914v1.60104c0,0.82235 -0.00368,0.79969 0.74993,0.79969h2.24992v0v7.19998c1.92808,0 2.99999,0.00055 2.99999,0v-7.19998v0h2.24992c0.7232,0 0.7502,-0.03316 0.7502,-0.79969v-1.60104c0,-0.7914 -0.11687,-0.79914 -0.7502,-0.79914h-2.24992v0v-1.60049c0,-0.74 -0.00709,-0.79969 1.49999,-0.79969h0.74993c0.74352,0 0.7502,0.01216 0.7502,-0.79969v-1.59993c0,-0.78201 0.03205,-0.80024 -0.7502,-0.80024z" fill="currentColor" fill-opacity="1"></path></g></g></symbol>
+					<ul class="menu flex">
+						<li><a href="#" class="active">Главная</a></li>
+						<li><a href="#">Портфолио</a></li>
+						<li>
+							<a href="#">Виды штор</a>
+						</li>
+						<li><a href="#">Ткани</a></li>
+						<li><a href="#">Карнизы</a></li>
+						<li><a href="#">Цех</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
 
-					<symbol viewBox="0 0 16 16" id="svg-inst"><g><g><path d="M13.9468,-0.00127c1.1296,0 2.05368,0.83672 2.05368,2.05422v11.89423c0,1.21694 -0.92408,2.05366 -2.05368,2.05366h-11.89371c-1.12987,0 -2.05381,-0.83672 -2.05381,-2.05366v-11.89423c0,-1.2175 0.92394,-2.05422 2.05381,-2.05422zM10.93536,2.49728v1.72428c0,0.39681 0.32389,0.72066 0.7202,0.72066h1.80847c0.39617,0 0.7202,-0.32386 0.7202,-0.72066v-1.72428c0,-0.39625 -0.32403,-0.72011 -0.7202,-0.72011h-1.80847c-0.39631,0 -0.7202,0.32386 -0.7202,0.72011zM12.78365,6.76598c0.1331,0.43494 0.20525,0.89641 0.20525,1.37224c0,2.66214 -2.22701,4.8197 -4.97388,4.8197c-2.7466,0 -4.97361,-2.15756 -4.97361,-4.8197c0,-0.47584 0.07214,-0.9373 0.20552,-1.37224h-1.46972v6.75896c0,0.35038 0.28639,0.63611 0.63633,0.63611h11.14283c0.3498,0 0.63592,-0.28572 0.63592,-0.63611v-6.75896zM8.01501,4.85159c-1.77465,0 -3.21355,1.39379 -3.21355,3.11365c0,1.71931 1.4389,3.11421 3.21355,3.11421c1.77479,0 3.21396,-1.3949 3.21396,-3.11421c0,-1.71986 -1.4389,-3.11365 -3.21396,-3.11365z" fill="currentColor" fill-opacity="1"></path></g></g></symbol>
-				</svg>
+					<div class="header__contact">
+						<a href="tel:+74956567788" class="phone">+7 (495) 656 77 88</a>
+						<a href="mailto:info@valentina.ru" class="email-link">info@valentina.ru</a>
+					</div>
+				</div>
 			</div>
-			<!-- end svg-sprite -->
+
+			<div class="copyright">
+				© 2019 Салон домашнего текстиля Валентина 
+			</div>
 		</footer>
 	</div><!-- end wrapper -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/common.js"></script>
 </body>

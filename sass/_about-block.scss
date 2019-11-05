@@ -1,0 +1,22 @@
+/*about-block*/ 
+.about-block__content{
+	padding: 160px 10px;
+	font-family: var(--caveat);
+	color: #9f9f9a;
+	font-size: 24px;
+	max-width: 1070px;
+	margin: 0 auto;
+	line-height: 1.2;
+	text-align: center;
+	background: url('../img/decor_left.jpg') left 30px no-repeat,
+				url('../img/decor_right.jpg') 100% 30px no-repeat;
+	
+	p{
+		max-width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		&:not(:last-child){
+			margin-bottom: 1em;
+		}
+	}
+}

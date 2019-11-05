@@ -1,13 +1,52 @@
 @font-face {
-	font-family: "PTSans";
-	src: url("../font/PTSansRegular.woff") format("woff");
+	font-family: "Pacifico";
+	src: url("../font/Pacifico-Regular/Pacifico-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Caveat";
+	src: url("../font/Caveat/Caveat-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: "Caveat";
+	src: url("../font/Caveat/Caveat-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("../font/Montserrat/Montserrat-Black.woff") format("woff");
+	font-style: normal;
+	font-weight: 900;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../font/Montserrat/Montserrat-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../font/Montserrat/Montserrat-Medium.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../font/Montserrat/Montserrat-Regular.woff") format("woff");
 	font-style: normal;
 	font-weight: 400;
 }
 @font-face {
-	font-family: "PTSans";
-	src: url("../font/PTSansBold.woff") format("woff");
+	font-family: "Montserrat";
+	src: url("../font/Montserrat/Montserrat-Light.woff") format("woff");
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 300;
 }
 
