@@ -24,5 +24,19 @@ $(document).ready(function () {
 		var img = $(this).find('img').attr('src');
 
 		$('.cloth-img').find('img').attr('src', img);
-	})
+	});
+
+	// popup
+	$('.header__nav .btn').on('click',function (e) {
+		e.preventDefault();
+
+		$('#overlay, .popup').show();
+	});
+
+	$('#overlay, .close').on('click',function () {
+
+		$('#overlay, .popup').hide();
+	});
+
+	$("[data-fancybox]").fancybox();
 })
